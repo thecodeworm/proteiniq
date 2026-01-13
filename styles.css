@@ -1,0 +1,35 @@
+body {
+    margin:0px;
+    font-family: sans-serif;
+    background-color: #fae5b4;
+}
+
+#navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: rgba(66, 135, 245, 0.8);
+}
+
+#navBar a {
+    color: white;
+    text-decoration: none;
+}
+
+#test, #shortDesc, #contact {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    background-color: #fae5b4;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#shortDesc, #contact {
+    margin-top: 20px;
+}
+
+.link {
+    color:#0000EE;
+}

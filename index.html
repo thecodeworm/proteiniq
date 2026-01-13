@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProteinIQ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="App Icons\favicon.png">
+    <link rel="apple-touch-icon" href="App Icons\appleicon.png">
+</head>
+<body>
+    <nav id="navBar">
+        <a href="#test">Protein Test</a>
+        <a href="#shortDesc">Description</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="test">
+        <div class="testContent">
+            <div class="testIntro">
+                <h1>ProteinIQ</h1>
+                <p>Welcome to ProteinIQ. Here you can take a test that will determine how much protein you should intake per day.</p>
+                <p>Take the test honestly, remember no data is saved!</p>
+            </div>
+            <div id="testMain">
+                <form id="proteinForm">
+                    <label>Are you <strong>male </strong>or <strong>female</strong>?</label><br>
+                    <select id="gender" required>
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select><br><br>
+                    <label>How tall are you? (in centimeters, if you need to convert, go to the following link: <a href="https://www.rapidtables.com/convert/length/feet-inch-to-cm.html" class="link" target="_blank">Inches - Centimeter Caclulator</a>, <strong>no units</strong>)</label><br>
+                    <input type="number" id="height" min="24" max="270" required><br><br>
+                    <label>How much do you weigh? (in kilograms, if you need to convert, go to the following link: <a href="https://www.rapidtables.com/convert/weight/pound-to-kg.html" class="link" target="_blank">Pounds - Kilograms Calculator</a>, <strong>no units</strong>)</label><br>
+                    <input type="number" id="weight" min="20" max="200" required><br><br>
+                    <label>What is your activity level?</label><br>
+                    <select id="activityLevel" required>
+                        <option value="">Select</option>
+                        <option value="sedentary">Sedentary (little or no exercise)</option>
+                        <option value="lightlyActive">Lightly Active (light exercise/sports 1-3 days/week)</option>
+                        <option value="moderatelyActive">Moderately Active (moderate exercise/sports 3-5 days/week)</option>
+                        <option value="veryActive">Very Active (hard exercise/sports 6-7 days a week)</option>
+                        <option value="extraActive">Extra Active (very hard exercise/sports & physical job or 2x training)</option>
+                    </select><br><br>
+                    <label>What is your training level?</label><br>
+                    <select id="trainingLevel" required>
+                        <option value="">Select</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select><br><br>
+                    <button type="submit">Calculate Protein Needs</button>
+                </form>
+                <div id="result"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="shortDesc">
+        <hr>
+        <div class="descriptionContent">
+            <h2>Project Description</h2>
+            <p>This project, ProteinIQ, aims to analyze and calculate protein content in both animal-based and plant-based foods, addressing a gap in current protein analysis methods. With the rising popularity of plant-based diets and the increasing need for sustainable food sources, it's crucial to provide detailed information on alternative protein options. This experiment directly compares protein content from both animal and plant sources to inform dietary planning and optimize protein intake. Through this analysis, individuals can make informed decisions about their food choices, benefiting those transitioning to plant-based diets, athletes seeking alternative protein sources, and healthcare professionals advising patients. Understanding protein intake through daily foods is essential for balanced nutrition and achieving individual health goals.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <hr>
+        <div class="contactContent">
+            <h2>Contact Information</h2>
+            <p>If you have any questions or feedback regarding ProteinIQ, please feel free to reach out:</p>
+            <p>Name: Aditya Chanda</p>
+            <p>Email:adi20c20@gmail.com</p>
+            <p>Thank you for using ProteinIQ, version 1.0.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
